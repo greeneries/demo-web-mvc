@@ -7,7 +7,7 @@ public class Login {
 	private String id;
 	private  String name;
 	
-	@Min(0)
+	//@Min(0)
 	private Integer age;
 	
 	public String getId() {

@@ -38,8 +38,8 @@ public class SampleControllerTest {
 		mockMvc.perform(post("/login2")
 				.param("id", "2")
 				.param("name", "jaein"))
-		.andExpect(status().isOk())
-		.andDo(print());
+		.andExpect(status().isOk());
+		//.andDo(print());
 		
 	}
 	
@@ -47,9 +47,10 @@ public class SampleControllerTest {
 	public void binding() throws Exception {
 		mockMvc.perform(post("/bindingTest")
 				.param("id", "3")
-				.param("age", "22"))
-		.andExpect(status().isOk())
-		.andDo(print());
+				.param("name","moon")
+				.param("age", "test"))
+		.andExpect(status().isOk());
+		//.andDo(print());
 	}
 
 	
